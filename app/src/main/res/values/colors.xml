@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="biru">#7093DB</color>
+    <color name="tombol">#5A8EAB</color>
+    <color name="bg">#93D0F0</color>
 </resources>

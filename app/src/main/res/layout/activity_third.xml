@@ -5,36 +5,57 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8B9FC8"
+    android:background="@color/biru"
     tools:context=".pertemuan_3.ThirdActivity">
 
     <Button
         android:id="@+id/btnKirim"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="359dp"
+        android:layout_height="42dp"
         android:layout_marginBottom="232dp"
-        android:backgroundTint="#526E9E"
-        android:text="Kirim"
-        android:textStyle="bold"
-        android:textSize="20sp"
+        android:backgroundTint="@color/tombol"
         android:fontFamily="sans-serif-thin"
+        android:text="Kirim"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputNoTujuan"
-        app:layout_constraintVertical_bias="0.692" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/inputNoTujuan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="312dp"
+        android:layout_marginTop="388dp"
         android:ems="10"
-        android:inputType="text"
         android:hint="Isi nama"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="142dp"
+        android:layout_height="267dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/smartphone" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/judul"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/outfit_variablefont_wght"
+        app:layout_constraintBottom_toTopOf="@+id/inputNoTujuan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
