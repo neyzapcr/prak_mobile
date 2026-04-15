@@ -15,7 +15,7 @@ import com.example.reapps.databinding.ActivityFifthBinding
 class FifthActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityFifthBinding
-
+//sebelum di improvisasi
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFifthBinding.inflate(layoutInflater)
