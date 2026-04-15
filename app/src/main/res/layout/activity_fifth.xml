@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:text="1. Toolbar dibuat lebih interaktif dengan efek snap, hide/show saat scroll, dan subtitle hilang saat collapse."
                 android:textSize="16sp"
-                android:layout_marginTop="24dp" />
+                android:layout_marginTop="24dp"/>
 
             <TextView
                 android:id="@+id/tvDesc2"
