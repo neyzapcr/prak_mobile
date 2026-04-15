@@ -21,11 +21,20 @@
             android:background="?attr/colorPrimary"
             android:titleTextColor="@android:color/white"
             android:subtitleTextColor="@android:color/white"
-            app:layout_scrollFlags="scroll|enterAlways" />
-<!--tes-->
+            app:layout_scrollFlags="scroll|enterAlways|snap" />
+
+        <ProgressBar
+            android:id="@+id/progressRead"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:max="100"
+            android:progress="0" />
+
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="24dp"
@@ -38,6 +47,17 @@
             android:orientation="vertical"
             android:gravity="center_horizontal">
 
+            <TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Improvisasi P5 Neyza"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="#EDE7F6" />
+
             <Button
                 android:id="@+id/btnWebView"
                 android:layout_width="wrap_content"
@@ -48,9 +68,42 @@
                 app:iconGravity="textStart" />
 
             <TextView
+                android:id="@+id/tvDesc1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                android:text="1. Toolbar dibuat lebih interaktif dengan efek snap, hide/show saat scroll, dan subtitle hilang saat collapse."
+                android:textSize="16sp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:id="@+id/tvDesc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Option Menu diperluas dengan submenu, checkbox mode, dan pilihan radio sort agar beda dari contoh dasar."
+                android:textSize="16sp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:id="@+id/tvDesc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Scrollable content ditambah progress baca dan tombol kembali ke atas agar lebih interaktif."
+                android:textSize="16sp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:id="@+id/tvDesc4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. WebView diperbaiki dengan progress loading, title dinamis, zoom, dan toolbar yang ikut hide/show."
+                android:textSize="16sp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:id="@+id/tvDesc5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Vector asset tetap memakai ic_arrow_back yang sudah ada, diterapkan pada toolbar dan button supaya konsisten."
                 android:textSize="16sp"
                 android:layout_marginTop="24dp" />
 
@@ -64,16 +117,47 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                android:text="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                 android:textSize="16sp"
                 android:layout_marginTop="24dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                android:text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
                 android:textSize="16sp"
                 android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                android:textSize="16sp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."
+                android:textSize="16sp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris."
+                android:textSize="16sp"
+                android:layout_marginTop="24dp" />
+
+            <Button
+                android:id="@+id/btnTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kembali ke Atas"
+                android:visibility="gone"
+                android:layout_marginTop="24dp"
+                app:icon="@drawable/ic_arrow_back"
+                app:iconGravity="textStart" />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

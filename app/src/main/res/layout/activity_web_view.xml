@@ -17,7 +17,16 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             android:titleTextColor="@android:color/white"
-            app:layout_scrollFlags="scroll|enterAlways" />
+            android:subtitleTextColor="@android:color/white"
+            app:layout_scrollFlags="scroll|enterAlways|snap" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:max="100"
+            android:progress="0" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

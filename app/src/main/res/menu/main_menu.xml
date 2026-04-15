@@ -1,11 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
         android:id="@+id/action_search"
         android:title="Search"
         android:icon="@android:drawable/ic_menu_search"
-        app:showAsAction="never" />
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_more"
+        android:title="More"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/action_profile"
+                android:title="Profile" />
+
+            <item
+                android:id="@+id/action_about"
+                android:title="About" />
+
+            <item
+                android:id="@+id/menu_compact_mode"
+                android:title="Compact Mode"
+                android:checkable="true" />
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sort_latest"
+                    android:title="Sort Latest" />
+
+                <item
+                    android:id="@+id/sort_popular"
+                    android:title="Sort Popular" />
+
+                <item
+                    android:id="@+id/sort_name"
+                    android:title="Sort Name" />
+            </group>
+        </menu>
+    </item>
 
     <item
         android:id="@+id/action_settings"
