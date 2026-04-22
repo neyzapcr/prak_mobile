@@ -2,14 +2,18 @@ package com.example.reapps
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.method.TextKeyListener.clear
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.edit
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.reapps.R
 import com.example.reapps.databinding.ActivityFourthBinding
 import com.example.reapps.databinding.ActivityMainBinding
 import com.example.reapps.pertemuan_4.FourthActivity
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,6 +30,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
+
         binding.btnFourth.setOnClickListener {
             val intent = Intent(this, FourthActivity::class.java)
             intent.putExtra("name", "Politeknik Caltex Riau")
@@ -33,6 +39,27 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("age", 25)
             startActivity(intent)
             finish()
+        }
+        binding.btnLogout.setOnClickListener {
+            MaterialAlertDialogBuilder(this)
+                .setTitle("Logout")
+                .setMessage("Apakah Anda yakin ingin logout?")
+                .setPositiveButton("Ya") { dialog, _ ->
+                    sharedPref.edit{
+                        clear()
+                    }
+
+                    dialog.dismiss()
+
+                    val intent = Intent(this, AuthActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+                .setNegativeButton("Tidak") { dialog, _ ->
+                dialog.dismiss()
+
+                }
+                .show()
         }
     }
 }
