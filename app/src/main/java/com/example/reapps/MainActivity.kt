@@ -45,10 +45,9 @@ class MainActivity : AppCompatActivity() {
                 .setTitle("Logout")
                 .setMessage("Apakah Anda yakin ingin logout?")
                 .setPositiveButton("Ya") { dialog, _ ->
-                    sharedPref.edit{
-                        clear()
-                    }
-
+                    val editor = sharedPref.edit()
+                    editor.clear()
+                    editor.apply()
                     dialog.dismiss()
 
                     val intent = Intent(this, AuthActivity::class.java)
