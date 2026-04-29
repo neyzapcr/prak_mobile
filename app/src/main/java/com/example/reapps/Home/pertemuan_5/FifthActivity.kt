@@ -1,4 +1,4 @@
-package com.example.reapps.pertemuan_5
+package com.example.reapps.Home.pertemuan_5
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.reapps.R
 import com.example.reapps.databinding.ActivityFifthBinding
+import kotlin.math.abs
 
 class FifthActivity : AppCompatActivity() {
 
@@ -71,7 +72,7 @@ class FifthActivity : AppCompatActivity() {
 
     private fun setupAppBarEffect() {
         binding.appBarLayout.addOnOffsetChangedListener { appBarLayout, verticalOffset ->
-            val fullyCollapsed = kotlin.math.abs(verticalOffset) >= appBarLayout.totalScrollRange
+            val fullyCollapsed = abs(verticalOffset) >= appBarLayout.totalScrollRange
 
             if (fullyCollapsed && !isCollapsed) {
                 isCollapsed = true

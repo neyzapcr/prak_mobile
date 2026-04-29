@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/biru"
-    tools:context=".Home.pertemuan_7.SeventhActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Message.MessageFragment">
+
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBar"
@@ -29,40 +28,16 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <Button
-        android:id="@+id/btnFragment1"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragment 1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnFragment2" />
-
-    <Button
-        android:id="@+id/btnFragment2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="48dp"
-        android:text="Fragment 2"
-        app:layout_constraintStart_toEndOf="@+id/btnFragment1"
-        app:layout_constraintTop_toBottomOf="@+id/appBar" />
-
-    <Button
-        android:id="@+id/btnFragment3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fragment 3"
+        android:layout_marginTop="320dp"
+        android:fontFamily="@font/outfit_variablefont_wght"
+        android:text="Ini fragment Message"
+        android:textColor="#212121"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnFragment2"
-        app:layout_constraintTop_toTopOf="@+id/btnFragment2" />
-
-    <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnFragment2" />
-
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

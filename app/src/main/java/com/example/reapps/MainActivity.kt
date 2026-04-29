@@ -2,19 +2,15 @@ package com.example.reapps
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.method.TextKeyListener.clear
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.edit
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.reapps.R
-import com.example.reapps.databinding.ActivityFourthBinding
 import com.example.reapps.databinding.ActivityMainBinding
-import com.example.reapps.pertemuan_3.ThirdActivity
-import com.example.reapps.pertemuan_4.FourthActivity
-import com.example.reapps.pertemuan_5.FifthActivity
-import com.example.reapps.pertemuan_7.SeventhActivity
+import com.example.reapps.Home.pertemuan_3.ThirdActivity
+import com.example.reapps.Home.pertemuan_4.FourthActivity
+import com.example.reapps.Home.pertemuan_5.FifthActivity
+import com.example.reapps.Home.pertemuan_7.SeventhActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 

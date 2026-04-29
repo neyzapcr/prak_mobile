@@ -1,4 +1,4 @@
-package com.example.reapps.pertemuan_7
+package com.example.reapps.Home.pertemuan_7
 
 import android.os.Bundle
 import android.view.MenuItem
@@ -9,7 +9,6 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.example.reapps.R
 import com.example.reapps.databinding.ActivitySeventhBinding
-import com.example.reapps.databinding.ActivityWebViewBinding
 
 class SeventhActivity : AppCompatActivity() {
 
