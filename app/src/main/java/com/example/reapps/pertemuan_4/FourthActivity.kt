@@ -8,9 +8,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.reapps.MainActivity
 //import com.example.reapps.MainActivity
 import com.example.reapps.R
 import com.example.reapps.databinding.ActivityFourthBinding
+import com.example.reapps.pertemuan_3.ThirdResultActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
@@ -64,6 +66,11 @@ class FourthActivity : AppCompatActivity() {
                     Log.e("Info Dialog","Anda memilih Tidak!")
                 }
                 .show()
+        }
+
+        binding.btnBack.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
     }

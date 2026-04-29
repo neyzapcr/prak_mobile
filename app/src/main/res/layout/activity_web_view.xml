@@ -10,14 +10,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
-
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
-            android:titleTextColor="@android:color/white"
             android:subtitleTextColor="@android:color/white"
+            android:titleTextColor="@android:color/white"
+            app:layout_anchor="@+id/appBar"
+            app:layout_anchorGravity="bottom|center"
             app:layout_scrollFlags="scroll|enterAlways|snap" />
 
         <ProgressBar
@@ -35,5 +36,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

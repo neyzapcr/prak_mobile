@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.reapps.MainActivity
 import com.example.reapps.R
 import com.example.reapps.databinding.ActivityThirdBinding
 
@@ -37,6 +38,11 @@ class ThirdActivity : AppCompatActivity() {
             Toast.makeText(this, "Pesan berhasil dikirim ke $noTujuan", Toast.LENGTH_SHORT).show()
 
             val intent = Intent(this, ThirdResultActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnBack.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }

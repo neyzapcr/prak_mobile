@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6A9792"
+    tools:context=".pertemuan_7.TigaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Ini fragment 3"
+    android:fontFamily="@font/outfit_variablefont_wght"
+    android:textColor="#212121"
+    android:textSize="22sp"
+    android:textStyle="bold" />
+</FrameLayout>

@@ -26,7 +26,7 @@ class WebViewActivity : AppCompatActivity() {
             subtitle = "Memuat halaman..."
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
-            setHomeAsUpIndicator(R.drawable.ic_arrow_back)
+            setHomeAsUpIndicator(R.drawable.outline_arrow_back_24)
         }
 
         binding.webView.apply {

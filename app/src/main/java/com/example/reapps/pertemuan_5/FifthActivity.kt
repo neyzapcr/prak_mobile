@@ -28,7 +28,7 @@ class FifthActivity : AppCompatActivity() {
             subtitle = "Improvisasi Toolbar"
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
-            setHomeAsUpIndicator(R.drawable.ic_arrow_back)
+            setHomeAsUpIndicator(R.drawable.outline_arrow_back_24)
         }
         binding.btnWebView.setOnClickListener {
             startActivity(Intent(this, WebViewActivity::class.java))

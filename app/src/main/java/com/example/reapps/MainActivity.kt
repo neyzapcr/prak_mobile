@@ -11,7 +11,10 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.reapps.R
 import com.example.reapps.databinding.ActivityFourthBinding
 import com.example.reapps.databinding.ActivityMainBinding
+import com.example.reapps.pertemuan_3.ThirdActivity
 import com.example.reapps.pertemuan_4.FourthActivity
+import com.example.reapps.pertemuan_5.FifthActivity
+import com.example.reapps.pertemuan_7.SeventhActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 
@@ -32,13 +35,26 @@ class MainActivity : AppCompatActivity() {
 
         val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
 
-        binding.btnFourth.setOnClickListener {
+
+        binding.btnToThird.setOnClickListener {
+            val intent = Intent(this, ThirdActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnToFourth.setOnClickListener {
             val intent = Intent(this, FourthActivity::class.java)
             intent.putExtra("name", "Politeknik Caltex Riau")
             intent.putExtra("from", "Rumbai")
             intent.putExtra("age", 25)
             startActivity(intent)
             finish()
+        }
+        binding.btnToFifth.setOnClickListener {
+            val intent = Intent(this, FifthActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnToSeventh.setOnClickListener {
+            val intent = Intent(this, SeventhActivity::class.java)
+            startActivity(intent)
         }
         binding.btnLogout.setOnClickListener {
             MaterialAlertDialogBuilder(this)
