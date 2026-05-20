@@ -30,7 +30,7 @@ class SeventhActivity : AppCompatActivity() {
             subtitle = "Memuat halaman..."
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
-            setHomeAsUpIndicator(R.drawable.outline_arrow_back_24)
+            setHomeAsUpIndicator(R.drawable.ic_arrow)
         }
 
         // Menampilkan fragment pertama secara default

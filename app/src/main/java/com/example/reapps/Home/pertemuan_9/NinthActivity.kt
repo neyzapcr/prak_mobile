@@ -9,7 +9,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.reapps.R
 import com.example.reapps.databinding.ActivityNinthBinding
-import com.example.reapps.databinding.ActivitySeventhBinding
 import com.google.android.material.chip.Chip
 
 class NinthActivity : AppCompatActivity() {
@@ -30,7 +29,7 @@ class NinthActivity : AppCompatActivity() {
             subtitle = "Memuat halaman..."
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
-            setHomeAsUpIndicator(R.drawable.outline_arrow_back_24)
+            setHomeAsUpIndicator(R.drawable.ic_arrow)
         }
         binding.chipGroupFilter.setOnCheckedStateChangeListener { group, checkedIds ->
             val selectedChipId = checkedIds.firstOrNull() // Ambil ID chip yang dipilih

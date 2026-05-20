@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.OnReceiveContentViewBehavior
 import com.example.reapps.AuthActivity
+import com.example.reapps.Home.pertemuan_10.TenthActivity
 import com.example.reapps.Home.pertemuan_3.ThirdActivity
 import com.example.reapps.Home.pertemuan_4.FourthActivity
 import com.example.reapps.Home.pertemuan_5.FifthActivity
@@ -64,6 +65,11 @@ class HomeFragment : Fragment() {
 
         binding.btnToNinth.setOnClickListener {
             val intent = Intent(requireContext(), NinthActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnToTenth.setOnClickListener {
+            val intent = Intent(requireContext(), TenthActivity::class.java)
             startActivity(intent)
         }
         binding.btnLogout.setOnClickListener {
