@@ -98,6 +98,7 @@ class MoreFragment : Fragment() {
         // Hubungkan listViewItems dengan adapter (masih sama dengan sebelumnya)
         binding.listViewItems.adapter = adapter
 
+
         // Tambahkan aksi saat item di-list diklik
         binding.listViewItems.setOnItemClickListener { _, _, position, _ ->
             val selectedItem = dataListWithDesc[position]
