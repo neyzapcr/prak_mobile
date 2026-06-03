@@ -8,7 +8,7 @@ class TenthTabsAdapter(activity: FragmentActivity) : FragmentStateAdapter(activi
 
     // Jumlah total tab yang ada
     override fun getItemCount(): Int = 3
-
+//
     // Menentukan Fragment mana yang akan ditampilkan berdasarkan posisi tab
     override fun createFragment(position: Int): Fragment {
         return when (position) {
